@@ -20,6 +20,14 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
+          name: FH BOT
+          tag_name: fhbot 
+          body: |
+              >[!NOTE]
+              >**This release was built by Github Actions**
+              >| [Link to build](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+              >| ------------- |
+
           files: fh_bot.exe
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
