@@ -18,12 +18,11 @@ jobs:
           icon: fh.ico
 
       - name: Zip
-        uses: vimtor/action-zip@v1.2
-        with:
-          files: |
-              fh_bot.exe
-              ./how_to.txt
-          dest: fhbot.zip
+        run: |
+          Xcopy .\fh_bot.exe .\fhbot_release /I
+          Xcopy .\how_to.tct .\fhbot_release /I
+          tar.exe -a -c -f fhbot.zip fhbot_release
+        shell: cmd
 
       - name: Release
         uses: softprops/action-gh-release@v2
