@@ -135,7 +135,7 @@ mouseId := AHI.GetmouseId(0x0DB0, 0x0D11)
     return
      
     ButtonH1:
-    howToPath := "./readme.txt"
+    howToPath := "./how_to.txt"
     SplitPath, howToPath,,,,fileName 
     Run,% "notepad.exe " . howToPath
         If WinExist(fileName)
