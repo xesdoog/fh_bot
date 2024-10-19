@@ -21,7 +21,7 @@ jobs:
         run: |
           Xcopy .\fh_bot.exe .\fhbot_release /I
           Xcopy .\how_to.txt .\fhbot_release /I
-          tar.exe -a -c -f fhbot.zip fhbot_release
+          tar.exe -a -c -f fhbot_release.zip fhbot_release
         shell: cmd
 
       - name: Release
@@ -35,6 +35,6 @@ jobs:
               >| [Link to build](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
               >| ------------- |
 
-          files: fhbot.zip
+          files: fhbot_release.zip
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
