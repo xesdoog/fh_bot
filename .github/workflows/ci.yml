@@ -22,7 +22,7 @@ jobs:
         with:
           files: |
               fh_bot.exe
-              how_to.txt
+              ./how_to.txt
           dest: fhbot.zip
 
       - name: Release
