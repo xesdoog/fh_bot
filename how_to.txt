@@ -1,0 +1,26 @@
+**Dependencies:**
+
+You must have Oblitum's Interception Driver installed, otherwise the script will not work.
+Interception is a driver that simulates keyboard and mouse movements. More info on what it is and how to install it can be found here: https://github.com/oblitum/Interception
+
+
+**PC Settings:**
+
+- Input your actual display resolution in the X and Y boxes in the script. For example, if your monitor is on 1920x1080, input 1920 in the X box and 1080 in the Y box then press OK to confirm.
+- Select the options that you'd like to use the press 'Save Settings' to generate a config file (can be used later to load/reload/edit config).
+
+
+**Game Settings:**
+
+1. Display Settings:
+	- Set 'Feild Of View' to 81.
+	- Set 'Contrast' to 55 .
+	- Set your display to Windowed Borderless or Full Screen.
+
+2. Graphics Settings:
+	- Disable all these options: Shadows, Motion Blur, Ambient Occlusion, Dynamic Reflections, Dynamic Shadows.
+	
+3. Keymapping:
+	- Bind arrows to WASD movements in secondary slot: Arrow Up = Move Forward, Arrow Down = Move Backward, Arrow Left = Move Left, Arrow Right - Move Right
+	- Auto-Flip (BP): Bind Numpad 9 in secondary slot for both Light Attack and Full Block Stance.
+	- Auto-Block: Bind Numpad 4 for Left Guard, Numpad 6 for Right Guard and Numpad 8 for Top Guard 4.
