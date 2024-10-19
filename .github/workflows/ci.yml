@@ -20,8 +20,8 @@ jobs:
       - name: Zip
         run: |
           mkdir .\fhbot_release
-          Xcopy .\fh_bot.exe .\fhbot_release /I
-          Xcopy .\how_to.txt .\fhbot_release /I
+          move .\fh_bot.exe .\fhbot_release
+          move .\how_to.txt .\fhbot_release
           tar.exe -a -c -f fhbot_release.zip fhbot_release
         shell: cmd
 
