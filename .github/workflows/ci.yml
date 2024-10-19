@@ -17,6 +17,14 @@ jobs:
           in: fh_bot.ahk
           icon: fh.ico
 
+      - name: Zip
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: |
+              fh_bot.exe
+              how_to.txt
+          dest: fhbot.zip
+
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
@@ -28,6 +36,6 @@ jobs:
               >| [Link to build](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
               >| ------------- |
 
-          files: fh_bot.exe
+          files: fhbot.zip
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
